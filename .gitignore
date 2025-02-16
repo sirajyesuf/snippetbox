@@ -1,0 +1,67 @@
+# Binaries
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Go specific
+*.log
+*.test
+*.prof
+*.sum
+*.mod
+
+# Compiled Object files
+*.o
+*.a
+
+# Vendor directory (if using vendoring)
+vendor/
+
+# Dependencies installed via Go Modules
+/go/pkg/mod/
+/go/bin/
+/go/src/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Logs & Debugging
+debug/
+trace.out
+coverage.out
+
+# Environment & Secrets
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Temporary files
+.DS_Store
+*.tmp
+*.temp
+
+# Node.js & Frontend (if using frontend in the project)
+node_modules/
+dist/
+build/
+
+# Docker & Deployment
+docker-compose.override.yml
+*.tar
+*.gz
+*.zip
+
+# Database & Cache
+*.db
+*.sqlite
+*.sqlite3
+/migrations/*.lock
+/tmp/
