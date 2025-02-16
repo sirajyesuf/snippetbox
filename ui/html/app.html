@@ -4,13 +4,32 @@
     <head>
         <meta charset="utf-8" />
         <title>{{template "title" .}} - Snippetbox</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     </head>
     <body>
         <header>
-            <h1><a href="/">Snippetbox</a></h1>
+            <nav
+                class="container mx-auto bg-gray-100 flex gap-4 items-center justify-between h-16 px-4"
+            >
+                <div>
+                    <img src="../static/img/snippetbox.png" />
+                </div>
+                <div class="flex gap-4">
+                    <a href="/">Home</a>
+                    <a href="/snippet/create">Create</a>
+                    <a href="/snippet/list">List</a>
+                    <a href="/snippet/search">Search</a>
+                    <a href="/snippet/logout">Logout</a>
+                    <a href="/snippet/login">Login</a>
+                    <a href="/snippet/register">Register</a>
+                    <a href="/snippet/profile">Profile</a>
+                </div>
+            </nav>
         </header>
-        <main>{{template "main" .}}</main>
-        <footer>Powered by <a href="https://golang.org/">Go</a></footer>
+        <main class="container mx-auto h-[90vh]">{{template "main" .}}</main>
+        <footer class="container mx-auto bg-blue-400 text-center">
+            Powered by <a href="https://golang.org/">Go</a>
+        </footer>
     </body>
 </html>
 {{end}}
